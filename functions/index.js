@@ -67,7 +67,7 @@ exports.handler = async (event, context) => {
             console.log(`From ${originSize}, Saved: ${(originSize - output.length)/originSize}%`);
             const encoded_output = output.toString('base64');
             return {
-                statusCode: 200,
+                statusCode: 203,
                 body: encoded_output,
                 isBase64Encoded: true,  // note: The final size we receive is `originSize` only, maybe it is decoding it server side, because at client side i do get the decoded image directly
                 // "content-length": encoded_output.length,     // this doesn't have any effect, this header contains the actual data size, (decrypted binary data size, not the base64 version)
