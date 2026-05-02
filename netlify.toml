@@ -1,6 +1,13 @@
 [functions]
+    external_node_modules = ["sharp"]
+    included_files = [
+    "node_modules/sharp/**/*",
+    "node_modules/@img/sharp-libvips/**/*"
+    ]
     directory = "functions/"
-
+[functions.index]
+    memory = 1024
+    timeout = 30
 [[redirects]]
     from = "/api/*"
     to = "/.netlify/functions/:splat"
