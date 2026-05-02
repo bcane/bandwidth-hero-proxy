@@ -1,9 +1,8 @@
 const sharp = require("sharp");
 
 async function compress(input, webp, grayscale, quality, originSize) {
-	quality = Math.max(5, Math.min(95, parseInt(quality, 10) || 40));
-	const format = avif ? 'avif' : webp ? 'webp' : 'jpeg';
-
+  quality = Math.max(5, Math.min(95, parseInt(quality, 10) || 40));
+	
 	// Create pipeline with explicit libvips-friendly options
   let pipeline = sharp(input, {
     failOnError: false,
