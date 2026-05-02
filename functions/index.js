@@ -11,7 +11,7 @@ exports.handler = async (event, context) => {
 
     if (!url) {
         return {
-            statusCode: 204,
+            statusCode: 200,
             body: "bandwidth-hero-proxy"
         };
     }
