@@ -1,3 +1,9 @@
+## Notice — Repository moved
+**This project is no longer maintained here.** Please move to the actively maintained fork at: https://github.com/himshim/bandwidth-hero-proxy2
+
+---
+
+
 # Bandwidth Hero Data Compression Service
 
 **Serverless** port of Bandwidth Hero Data Compression Service 🚀.
